@@ -1,14 +1,12 @@
 import React from 'react';
-import 'style/test.less';
-import {Button} from 'antd'
 
-function App() {
+
+function App(props) {
+  console.log(props)
   return (
     <div className="App">
-      <header className="App-header">
-        <Button type="danger">hehe</Button>
-        <h3>你好，WORID</h3>
-      </header>
+
+      {props.children}
     </div>
   );
 }
